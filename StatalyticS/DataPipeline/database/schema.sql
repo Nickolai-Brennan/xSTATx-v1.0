@@ -1,0 +1,2 @@
+-- SQL schema for StatalyticS database
+-- Define tables for players, teams, and statistics

@@ -1,0 +1,14 @@
+# Byte-compiled / temporary files
+__pycache__/
+*.py[cod]
+*.sqlite
+*.db
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Secrets
+Config/api_keys.json
+
+# Outputs
+Outputs/
