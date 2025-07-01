@@ -18,7 +18,15 @@ DEFAULT_PARAMS = {
 
 
 def generate_url(overrides=None):
-    """Generate a FanGraphs leaderboard URL with optional parameter overrides."""
+    """
+    Constructs a FanGraphs leaderboard URL using default parameters, with optional overrides.
+    
+    Parameters:
+        overrides (dict, optional): Dictionary of query parameter overrides. Keys with `None` values are ignored, and all values are converted to strings.
+    
+    Returns:
+        str: The complete FanGraphs leaderboard URL with encoded query parameters.
+    """
     params = DEFAULT_PARAMS.copy()
     if overrides:
         params.update({k: str(v) for k, v in overrides.items() if v is not None})
