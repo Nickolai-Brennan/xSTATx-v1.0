@@ -12,3 +12,13 @@ Config/api_keys.json
 
 # Outputs
 Outputs/
+
+# Data outputs
+DataPipeline/raw_data/*
+!DataPipeline/raw_data/.gitkeep
+DataPipeline/processed_data/*
+!DataPipeline/processed_data/.gitkeep
+DataPipeline/player_map/*
+!DataPipeline/player_map/.gitkeep
+DataPipeline/sql_queries/*
+!DataPipeline/sql_queries/.gitkeep

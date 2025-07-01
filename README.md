@@ -7,6 +7,11 @@ StatalyticS is a modular baseball analytics engine designed to pull and unify st
 ```
 StatalyticS/
 ├── DataPipeline/       # Data ingestion and database scripts
+│   ├── raw_data/
+│   ├── processed_data/
+│   ├── player_map/
+│   ├── sql_queries/
+│   └── database/
 ├── Docs/               # Documentation and formulas
 ├── Models/             # Scoring and machine learning models
 ├── Config/             # API keys and runtime settings
@@ -14,3 +19,5 @@ StatalyticS/
 ```
 
 Each subfolder contains starter scripts or placeholders for future development. See `Docs/ProjectOverview.md` for a detailed breakdown of planned phases.
+
+The FanGraphs pull script demonstrates how to use the `month` parameter (`0` for full season, `1` for last 7 days, etc.) when requesting leaderboard data.
